@@ -1,3 +1,5 @@
+from helpers import parse_grid_file
+
 DIAGONAL_OFFSETS = [(-1, -1), (-1, 1), (1, -1), (1, 1)]
 ALL_OFFSETS = DIAGONAL_OFFSETS + [(0, 1), (0, -1), (-1, 0), (1, 0)]
 
@@ -10,12 +12,7 @@ def parse_input():
     Returns:
         dict: A dictionary where the keys are coordinates (tuples of integers) and the values are characters.
     """
-    lines = open("inputs/day4_input.txt").read().strip().splitlines()
-    coords_dict = {}
-    for i, line in enumerate(lines):
-        for j, char in enumerate(line):
-            coords_dict[(i, j)] = char
-    return coords_dict
+    return parse_grid_file("inputs/day4_input.txt")
 
 
 def find_sequence(coords, sequence, offset):
