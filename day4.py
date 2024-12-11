@@ -12,7 +12,7 @@ def parse_input():
     Returns:
         dict: A dictionary where the keys are coordinates (tuples of integers) and the values are characters.
     """
-    return parse_grid_file("inputs/day4_input.txt")
+    return parse_grid_file("inputs/day4.txt")
 
 
 def find_sequence(coords, sequence, offset):

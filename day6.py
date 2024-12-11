@@ -8,7 +8,7 @@ DIRECTIONS = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 def parse_input():
     """Parse the input file into a grid representation."""
-    return parse_grid_file("inputs/day6_input.txt")
+    return parse_grid_file("inputs/day6.txt")
 
 
 def find_start_position(grid, start_char="^"):

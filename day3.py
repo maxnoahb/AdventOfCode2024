@@ -2,7 +2,7 @@ import re
 
 
 def parse_input():
-    text = open("inputs/day3_input.txt").read().strip()
+    text = open("inputs/day3.txt").read().strip()
     return text
 
 

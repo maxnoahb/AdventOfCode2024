@@ -8,7 +8,7 @@ def parse_input():
                list contains the updates, where each update is represented as a list
                of integers.
     """
-    lines = open("inputs/day5_input.txt").read().strip().splitlines()
+    lines = open("inputs/day5.txt").read().strip().splitlines()
     split_index = lines.index("")
     rules, updates = lines[:split_index], lines[split_index + 1 :]
     rules = [(int(a), int(b)) for a, b in [rule.split("|") for rule in rules]]

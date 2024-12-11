@@ -3,7 +3,7 @@ import numpy as np
 
 def parse_input():
     """Split input file into a list of lists of integers."""
-    lines = open("inputs/day2_input.txt").read().strip().splitlines()
+    lines = open("inputs/day2.txt").read().strip().splitlines()
     lines = [line.split() for line in lines]
     return lines
 

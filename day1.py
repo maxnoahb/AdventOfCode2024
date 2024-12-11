@@ -9,7 +9,7 @@ def parse_input():
         list: The first sorted list.
         list: The second sorted list.
     """
-    lines = open("inputs/day1_input.txt").read().strip().splitlines()
+    lines = open("inputs/day1.txt").read().strip().splitlines()
     list1, list2 = [], []
     for line in lines:
         num_list = line.split()
